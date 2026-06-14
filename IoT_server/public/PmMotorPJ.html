@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+     <title>Get Ready - Coming Soon Template</title>
+     <!-- 
+
+Get Ready Template
+
+https://templatemo.com/tm-521-get-ready
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/vegas.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+
+<body>
+
+     <div class="menu-bg"></div>
+     <div class="menu-burger">☰</div>
+
+     <div class="menu-items">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-2 col-md-4 col-sm-6">
+                         <h1>Navigations</h1>
+                         <ul class="menu">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Our Studio</a></li>
+                              <li><a href="#">Journal</a></li>
+                              <li><a href="#">Start a project</a></li>
+                              <li><a href="#">Email Us</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <address>
+                              <h1>Our Studio</h1>
+                              <p>1234 New Street View, <br> Kumasi, Ghana</p>
+                              <div class="google-map">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907"
+                                        allowfullscreen></iframe>
+                              </div>
+                         </address>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                         <ul class="social-icon">
+                              <li class="line"></li>
+                              <li><a href="https://fb.com/templatemo" class="fa fa-facebook"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="https://plus.google.com/+templatemo" class="fa fa-google"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+     <!-- HOME -->
+     <section id="home">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info">
+                              <h1>한림대학교 <br>날씨 모니터링</h1>
+                              <!-- You can change the date time in init.js file -->
+                              <ul class="countdown">
+                                   <li>
+                                        <span class="temp">-</span>
+                                        <h3>온도</h3>
+                                   </li>
+                                   <li>
+                                        <span class="humi">-</span>
+                                        <h3>습도</h3>
+                                   </li>
+                                   <li>
+                                        <span class="pm">-</span>
+                                        <h3>미세먼지</h3>
+                                   </li>
+                              </ul>
+
+                              <!-- Virtual Control Panel -->
+                              <div class="control-panel"
+                                   style="margin-top: 40px; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; text-align: left;">
+                                   <h3 style="color: white; margin-bottom: 20px; text-align: center;">환경 제어 모드 설정</h3>
+
+                                   <div
+                                        style="margin-bottom: 25px; text-align: center; border-bottom: 1px solid #555; padding-bottom: 15px;">
+                                        <label
+                                             style="color: white; margin-right: 20px; font-size: 18px; font-weight: bold; cursor: pointer;">
+                                             <input type="radio" name="controlMode" value="auto" checked> 📡 실시간 API 연동
+                                             모드
+                                        </label>
+                                        <label
+                                             style="color: white; font-size: 18px; font-weight: bold; cursor: pointer;">
+                                             <input type="radio" name="controlMode" value="simulation"> 🛠️ 가상 시뮬레이션 모드
+                                        </label>
+                                   </div>
+
+                                   <div id="simulation-controls"
+                                        style="opacity: 0.3; pointer-events: none; transition: opacity 0.3s;">
+                                        <div style="margin-bottom: 15px; text-align: center;">
+                                             <label style="color: white; margin-right: 15px; font-size: 16px;">미세먼지 강제
+                                                  조절:</label>
+                                             <input type="range" id="pm-slider" min="0" max="200" value="30"
+                                                  style="display: inline-block; width: 250px; vertical-align: middle;">
+                                             <span id="pm-slider-val"
+                                                  style="color: white; margin-left: 10px; font-size: 18px; font-weight: bold;">30</span>
+                                        </div>
+                                   </div>
+
+                                   <div style="text-align: center; margin-top: 20px;">
+                                        <label style="color: white; margin-right: 15px; font-size: 16px;">수동 창문
+                                             제어:</label>
+                                        <button id="btn-open" class="btn btn-success">🟢 강제 열기</button>
+                                        <button id="btn-close" class="btn btn-danger">🔴 강제 닫기</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/vegas.min.js"></script>
+     <!--script src="js/countdown.js"></script>
+     <script src="js/init.js"></script-->
+     <script src="js/custom.js"></script>
+     <script src="/socket.io/socket.io.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script>var $j331 = jQuery.noConflict(true);</script>
+     <script>
+          var socket = io.connect();
+           var timer = null;
+           var currentPm = -1; // 이전 미세먼지 수치 저장용
+           var windowState = 'closed'; // 아두이노 초기 상태가 CLOSED(0도)이므로 웹페이지도 closed로 일치시킵니다.
+           var hasPromptedWarning = false;  // 80 이상 경고창을 띄웠는지 여부
+           var hasPromptedRecovery = false; // 70 이하 환기창을 띄웠는지 여부
+
+          $j331(document).ready(function () {
+               socket.on("socket_up_temp", function (data) {
+                    data = JSON.parse(data);
+                    $j331(".temp").html(data.tmp);
+               });
+               socket.on("socket_up_humi", function (data) {
+                    data = JSON.parse(data);
+                    $j331(".humi").html(data.humi);
+               });
+                socket.on("socket_up_pm", function (data) {
+                     data = JSON.parse(data);
+                     var newPm = parseInt(data.pm);
+                     $j331(".pm").html(newPm);
+
+                     if (currentPm === -1) {
+                          currentPm = newPm;
+                          return;
+                     }
+
+                     // 1. 100 초과(이상): 자동으로 닫음
+                     if (newPm >= 100) {
+                          if (windowState === 'open') {
+                               windowState = 'closed';
+                               alert("🚨 미세먼지가 " + newPm + "으로 매우 나쁩니다!\n창문을 자동으로 닫습니다.");
+                               alert("🍃 공기청정기를 켭니다."); // 공기청정기 알림 추가
+                               socket.emit("manual_control", { command: "auto_close" });
+                          }
+                     }
+                     // 2. 80 초과(이상) 100 미만: 사용자에게 닫을지 묻기
+                     else if (newPm > 80) {
+                          if (windowState === 'open' && !hasPromptedWarning && currentPm <= 80) {
+                               hasPromptedWarning = true;
+                               if (confirm("⚠️ 미세먼지가 " + newPm + "으로 나빠지고 있습니다!\n창문을 닫으시겠습니까?")) {
+                                    windowState = 'closed';
+                                    alert("🍃 공기청정기를 켭니다."); // 공기청정기 알림 추가
+                                    socket.emit("manual_control", { command: "manual_close" });
+                               }
+                          }
+                     }
+                     // 3. 70 이하: 사용자에게 열지 묻기
+                     else if (newPm <= 70) {
+                          if (windowState === 'closed' && !hasPromptedRecovery && currentPm > 70) {
+                               hasPromptedRecovery = true;
+                               if (confirm("🍃 미세먼지가 " + newPm + "으로 떨어져 공기가 좋아졌습니다!\n창문을 다시 열어 환기하시겠습니까?")) {
+                                    windowState = 'open';
+                                    socket.emit("manual_control", { command: "manual_open" });
+                               }
+                          }
+                     }
+
+                     // 경고창 중복 방지 플래그 리셋 조건
+                     if (newPm <= 80) {
+                          hasPromptedWarning = false; // 80 이하로 떨어지면 다시 80 초과가 되었을 때 경고창을 띄우도록 리셋
+                     }
+                     if (newPm > 70) {
+                          hasPromptedRecovery = false; // 70 초과로 올라가면 다시 70 이하가 되었을 때 환기창을 띄우도록 리셋
+                     }
+
+                     currentPm = newPm;
+                });
+
+               // 모드 변경 이벤트
+               $j331('input[name="controlMode"]').change(function () {
+                    var mode = $j331(this).val();
+                    socket.emit('change_mode', { mode: mode });
+
+                    if (mode === 'simulation') {
+                         $j331('#simulation-controls').css({ 'opacity': '1', 'pointer-events': 'auto' });
+                    } else {
+                         $j331('#simulation-controls').css({ 'opacity': '0.3', 'pointer-events': 'none' });
+                    }
+               });
+
+               // 슬라이더 이벤트
+               $j331("#pm-slider").on("input", function () {
+                    $j331("#pm-slider-val").text($j331(this).val());
+               });
+               $j331("#pm-slider").on("change", function () {
+                    socket.emit("virtual_pm", { pm: $j331(this).val() });
+               });
+
+               // 버튼 제어 이벤트
+               $j331("#btn-open").click(function () {
+                    socket.emit("manual_control", { command: "manual_open" });
+                    windowState = 'open';
+               });
+               $j331("#btn-close").click(function () {
+                    socket.emit("manual_control", { command: "manual_close" });
+                    windowState = 'closed';
+               });
+
+               if (timer == null) {
+                    timer = window.setInterval("timer_1()", 3000);
+               }
+          });
+          function timer_1() {
+               socket.emit("socket_evt_update", JSON.stringify({}));
+          }
+     </script>
+
+</body>
+
+</html>

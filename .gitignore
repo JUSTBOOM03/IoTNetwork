@@ -1,0 +1,29 @@
+# Node.js runtime and packages
+Nodejs/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Eclipse Java project compiler outputs and settings
+bin/
+.settings/
+.metadata/
+*.class
+
+# Mosquitto local binaries
+mosquitto/
+temp_dust.xml
+temp_dust_utf8.xml
+temp_utf8.xml
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.log

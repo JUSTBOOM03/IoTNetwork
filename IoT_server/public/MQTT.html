@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<title>MQTT Monitoring Service</title>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    var socket = io.connect();
+    var timer = null;
+    $(document).ready(function(){
+        socket.on("evt_temp_s2c", function(data){
+            data = JSON.parse(data);
+            $(".mqttlist").html('<li>'+data.tmp+'C'+'</li>');
+        });
+        if(timer==null){
+            timer = window.setInterval("timer1()", 1000);
+         }
+    });
+    function timer1(){
+        socket.emit("evt_temp_c2s", JSON.stringify({}));
+    }
+
+    function button_on(){
+        socket.emit("socket_evt_btn","ON")
+    }
+
+    function button_off(){
+        socket.emit("socket_evt_btn","OFF")
+    }
+</script>
+</head>
+<body>
+MQTT Monitoring Service
+    <div id="msg">
+         <div id="mqtt_logs">
+            <ul class="mqttlist_temp"></ul>
+            <ul class="mqttlist_humi"></ul>
+            <button id="button1" onclick = "button_on();"><b>LED ON</b></button>
+            <button id="button2" onclick = "button_off();"><b>LED OFF</b></button>
+            <ul class="mqttlist"></ul>
+        </div>
+    </div>
+</body>
+</html>
