@@ -357,3 +357,9 @@ io.on("connection", function (socket) {
 * [3] Socket.io 공식 문서 - Node.js와 브라우저 간 실시간 양방향 이벤트 교환 방식
 * [4] Express.js & MongoDB Driver - 미들웨어 연동 및 비차단 I/O 콜백 로깅 기법
 * [5] Arduino PubSubClient Library - ESP32S3 무선 통신 및 non-blocking 연결 상태 머신 구현
+* [6] org.jsoup (Jsoup Java HTML Parser) - 공식 API 레퍼런스 및 XML/HTML DOM 파싱 명세
+* [7] ESP32Servo Library (Kevin Harrington) - ESP32S3 마이크로컨트롤러 환경의 PWM 주파수 매칭 및 SG90 서보 제어 가이드
+* [8] LiquidCrystal_I2C Library (Frank de Brabander) - PCF8574 I2C 인터페이스를 활용한 LCD 1602 문자 출력 및 백라이트 제어
+* [9] OASIS MQTT v3.1.1 Specification - MQTT 프로토콜 헤더 구조 및 QoS 레벨 정의 공식 문서
+* [10] jQuery API Documentation (jQuery 3.x) - 이벤트 바인딩 및 비동기 소켓 응답에 따른 DOM 요소 실시간 조작 명세
+
